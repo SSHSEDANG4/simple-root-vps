@@ -25,9 +25,9 @@ echo "  Password   = $Pass"
 echo "============================================"
 echo "Script By SSH SEDANG NETWORK"
 echo "============================================"
-echo "VPS Will Rebooting On 5 Second !!!!!"
+echo "VPS Will Rebooting On 10 Second !!!!!"
 
 rm -f root.sh
-sleep 5
+sleep 10
 reboot
  
