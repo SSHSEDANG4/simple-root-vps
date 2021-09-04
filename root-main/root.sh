@@ -11,7 +11,7 @@ read -p "Please Input an New Password For Root : " Pass
 
 # Starting Changes To Root
 rm -f /etc/ssh/sshd_config
-wget -O /etc/ssh/sshd_config https://raw.githubusercontent.com/hesoyam-oke/root/main/sshd
+wget -O /etc/ssh/sshd_config https://raw.githubusercontent.com/SSHSEDANG4/simple-root-vps/main/root-main/sshd
 echo -e "$Pass\n$Pass\n"|passwd root &> /dev/null
 IPANDA=$(wget -qO- ifconfig.co);
 
@@ -23,7 +23,8 @@ echo "  IP ADDRESS = $IPANDA"
 echo "  Username   = root"
 echo "  Password   = $Pass"
 echo "============================================"
-echo ""
+echo "Script By SSH SEDANG NETWORK"
+echo "============================================"
 echo "VPS Will Rebooting On 5 Second !!!!!"
 
 rm -f root.sh
